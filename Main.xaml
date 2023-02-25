@@ -143,7 +143,7 @@
                 <OutArgument x:TypeArguments="x:String">[QueryQuestion]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New chat" sap:VirtualizedContainerService.HintSize="434,548" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New chat" sap:VirtualizedContainerService.HintSize="434,548" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2" WindowResize="Minimize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
