@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,2481" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,2739" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="34">
+    <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -35,10 +35,11 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="49">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -86,21 +87,22 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,2416" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,2674" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,2305" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,2563" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2014" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2272" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DatabaseSchema" />
               <Variable x:TypeArguments="x:String" Name="QueryQuestion" />
@@ -110,6 +112,17 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'windowsterminal.exe MyS…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="157, 44, 534, 28" DesignTimeScaleFactor="1" FriendlyName="'windowsterminal.exe MyS…'" Guid="ff32a7dd-1f84-4a2f-9da1-b6c1f35defff" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhYAAAAcCAYAAAA9Q/acAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACeSURBVHhe7daxDcAwEAOxDPD7r2vDXVwGuZICWGiDe2ZmAQAUhAUAkBEWAEBGWAAAmSsszt4fAOALYQEAZIQFAJARFgBARlgAABlhAQBkhAUAkBEWAEBGWAAAGWEBAGSEBQCQERYAQEZYAAAZYQEAZIQFAJARFgBARlgAABlhAQBkhAUAkLnCAgDgD2EBAGSEBQCQERYAQEZYAACRWRsmBZ4yQH05ywAAAABJRU5ErkJggg==" InformativeScreenshot="202d0c0a70c06548b005a1a0a67f579b.png" ScopeSelectorArgument="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='MySQL 8.0 Command Line Client' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="11, 41, 136, 33" FriendlyName="'windowsterminal.exe MyS…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIgAAAAhCAYAAAACqeN0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANfSURBVHhe7Za9UeRAEEYvgE2CHEiBDEiAAPDxMXFx8bBx8bHJaa+eqt7WV32jWQm4nzraeKWd7tb0z3yS9sfhcDg2zRotkGZKC6SZ0gJpprRAmiktkGZKC6SZ0gJpprRAmiktkGZKC6SZ8kcEcnl5eby+vh76mr/L+/v78f7+fuiDVYE8Pz8vN48Yxc+ggI/c1/x+OJcPC+T19XW5uTKKn8E9LZB/k08JBEY+Mebh4WFJBPzWrzBG1KJYv729LT6EeXt7e/LxefK+p6enxWds5tvCqObHx8fjxcXFKSbzUUv1A2tqxm8sZN3nYpxP/uYe8+dnuc7n5ubm5Ns6Hz719I4dP3H8Zm9j5O7ubvF9WiAUy5UkJncA/vdgwNj5Lfjcx+FwxefaITi0l5eXU134PGR87nUOa2aQmasOEjsQh5/7ch/vw28sjPpaiyE/fvojP3VlTdiJ8yCpAZ+Cs++t88GuMPDbG3viTzyzXZ8YDz5jSGgjXEcJWWNPW0IeCkobe9NAtbHP1dXVsmbQaw2uYc1pI0+1JT5N9gnWkrbKuRgFwpVYZsCM67w4eGbk2r5HM8M+mo+/6cV44vRrS6hr159UbDWm2kYJa8OVzJGM8mFP215GNdf6GCZPn7EcEH6fROAJzDo9BP1bYnyg2BcBEE+MuY0jporBt0XaWBObNkkxph0bOdOWfMl/kLSNErJeKxzwMQCKT3wSZDaArYxqzvo4NN4m+fakNvx1uBw2T6RvIGI45D0xrHlrkI/9iaO+fHsS8y0EUp8wYTjncgExawPYCnvUzwnD1zYapP8B6nAT3wZ5sJVRDL2Tn7rwc4Wc4d5PTNrEz8mXfmLyKUoyBvK+UUILyf2yUF/FDI7fFMZVQXHFlq/6+nbZin2Ri32ohT0dtrWyxo84iNVmTXwG7AU8nOxrSww2+iKWNUKF/L+nQIllH+pnTX34t84Hv3szX/tizxpLr/h2/QeRjIG8D/8oIUXZGORTBBRsg0AjNsl+2qXm3Yo1554Mg6fXGHzkx0dNigbszQGK4nePrTH1kKiNtYcvWRP7MK/0mUNG86EP91coXGtNgIiJWxXI/4oCGfmaX2mBNFNaIM2UbyeQZh8tkGZKC6SZ0gJpprRAmiktkGZKC6SZ0gJpJhyOPwFMldYf37WIPAAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'windowsterminal.exe MyS…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c78506ea-f35b-4818-963d-6c19bdb49a35" Text=" show databases;[k(enter)]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="73, 300, 280, 24" DesignTimeScaleFactor="1" FriendlyName="'windowsterminal.exe MyS…'" Guid="58de8afb-4df9-4581-8904-61bea86c6150" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARgAAAAYCAYAAAAh+eI4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVHhe7dQxAQAwDAShCnj/dlMVtzFggbftAAqCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCATKCASK7D1xB2HRJlQAuAAAAAElFTkSuQmCC" InformativeScreenshot="3c49765bc85d8311074b4e53dbf156db.png" ScopeSelectorArgument="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='MySQL 8.0 Command Line Client' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
