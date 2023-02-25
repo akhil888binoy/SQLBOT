@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,507" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,572" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -63,13 +63,13 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,391" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,507" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,280" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="434,396" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -85,7 +85,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" />
+        <uix:TargetApp Area="66, 49, 1129, 635" FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ddLTmpBEAbgXhQPEUFUEOWRGEwMw2M0ThiwEyZMNAIDBBEIC4AdkJgob0UEgrKOulR566Q8ORy8wdmlkz9hxFfV1d0EtVmb9fj4qC0CP8nNzc2Pc3V19ZNoWIApZhYzaFlMMNNsClDRaBQwkUiEEg6H9YRCIcrx8bGeo6MjSjAY1HN4eEgJBAJ6/H6/noODA8r+/j5lb29Pj2JY4gxLnGGJMyxxK1jiPp+PQgX8BixxK1jiu7u7oIz46ekpNJtNeH9/pxlJWOJWsMSXwRxl7Bjx+XwOn5+f8Pr6CpeXlyvhVV0zLHGv10uhAuR2v729wcfHB8xmM5hOp9Dv9+Hi4uIbvg4scY/HA0riGOz45eUFJpMJjMdjGkWn04Hz8/NvOMMSZ1jiy2COYljOGTvudrswGo1oR4bDITw9PYGmaWvBEt/Z2aEoCfOcMdhxq9WiczAYDGgUuBPJZFKHJc6wxK1gjNvt/ipAwnLO2PHz8zP0ej3aESwAd2IVLPFlMEcZYTnneDwOjUaD4Ha7TTuCT7IRt4IlLuHt7W2KMoMZL5fLUKvVoF6v004gnkgkTLtmeFXXDGNcLtdXARLGw4V4qVSCarVKReDnXC4HsVjs12COkjDm7OwM7u/voVKpEFwsFiGbzeo4wxJnWOIMS1zCW1tbFMUwBg9XoVCAh4cHKuLu7g5ub28JN4OxQH41+eHCtwOvL15dfE8ymcw3nGGn00mhAuSVSqfTVEQ+n6ffdYkzzF0bYXy08N3gq4u3Bw+whCXucDhASRyDNyKVSsH19TWcnJyYwrzVWCi+mGYwXlu8Ofg9RphxKoBhjPGASZxhxv9lzmaw3W6nUAFWsLHrZbDZnCXOsMRtNhuoBaxJ3AqW+Dow44tof/8dbNZ/u5T6A8jJXVVBUYbIAAAAAElFTkSuQmCC" InformativeScreenshot="6c9af4a0e7cc2f407567db12d65d64ab.png" Selector="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='MySQL 8.0 Command Line Client' /&gt;" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
