@@ -124,7 +124,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" Result="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="338,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="Database Schema" />
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Result="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="338,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the database schema" Title="Database Schema" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
