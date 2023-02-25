@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,2936" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,3153" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
       <x:String>System.Activities</x:String>
@@ -90,19 +90,19 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,2871" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,3088" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,2760" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,2977" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2686" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DatabaseSchema" />
               <Variable x:TypeArguments="x:String" Name="QueryQuestion" />
@@ -161,19 +161,19 @@
                 <OutArgument x:TypeArguments="x:String">[QueryQuestion]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New chat" sap:VirtualizedContainerService.HintSize="434,745" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2" WindowResize="Minimize">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New chat" sap:VirtualizedContainerService.HintSize="434,743" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2" WindowResize="Minimize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,528" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,526" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Text="[DatabaseSchema + &quot;This is the schema of database ..... now type an sql query for &quot; + QueryQuestion]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Text="[DatabaseSchema + &quot;This is the schema of database ..... now type an sql query for &quot; + QueryQuestion + &quot;[k(enter)]&quot;]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://chat.openai.com/chat" DesignTimeRectangle="437, 626, 768, 50" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' idx='2' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='flex flex-col w-full py-2 flex-grow md:py-3 md:pl-4 relative border border-black/10 bg-white dark:border-gray-900/50 dark:text-white dark:bg-gray-700 rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]' parentid='__next' tag='DIV' aaname='' /&gt;" Guid="9c7474e1-8618-4657-ac96-cf1eb401cae5" ImageBase64="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" InformativeScreenshot="3bfdb43b61297c7c051bfe0fa1dde093.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='New chat' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
@@ -196,6 +196,7 @@
                 <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAAdQAAAHUB48IHZQAABK5JREFUWEe9V1lTU0kU5s0/4/hL5o/4MA9ThTDO4lJqzdSU5UKNjpoAggOSsMuiiJqwyi7IEoEAYRFkRxK2bGfOd6Avfe9tUEvxVH2V9Hq+22frzvjx7M82ZBZ7zmT5cm+f83mHGTEGfSVi50q8Q4xb2f78H5z6rD8/1eec4sn3GClt8bdGionchS4bgX3lnqBhwcnA7w0oEkKAO/Hl5sknhEyf944QgM2547OO/VpNCbWND9P6Vowg8WSCwovzVPQ6QFmG+Z9AMrPEe5q/3pNjGHQhr7mBdhNxSqXTNLX8gTomQtQ3HabNnW0hM/x+mi5XF9GftT66UFFo3MOJLJ/nJo4f3m6coHDreSUlkklaiX6k241VtrHzZfk0sbQgJHSZW1uhh62NtrkucHRksC2ixkENOGZ8/V91fls/iE0eKI/yScA8tf2d1DI2RBvbW9LfMzVG2f482zoNmzgB04Agr+U5Dc1FKM0bYVPVf7mqiDon3lGazbHHxOrfdstJ6GvRfh0OCYlXoX7bmA4jgfOl+fRmekIWw+aQwrYXMobfnfiekOqZGqcrT4qtdTcaKmStagOjC7OUSCXpSvXhPB1GAt2To6K0PTxC/q5m+X8vUCdjg3wisG9OY7U1//rTMlY0J/NWY5tUcEAWuPuqVvoretusPh0uArArpDcyLm1sBtEJqM0uVD4S0yAcg+/e0uOOIIdoVOaPL76XE/mlNE/a8A+lQ4eLACbiyC5V/SdtE4GqvnYhsbW3K2OtY8OiCOO/su0bBnuFFMzXwb4CaR499CEdLgKza8s0u7pstU0EsPnix3XyND2j+4F6WthYs9pq3bWax+xHYfEVSFl3izWmw0Vgfn2VIiuLVttEAN6tvhjI9ueKKSAjnJD+ri+1rY9zDoHfmMLRRaB/ZlJiHkeJNjIgpJjTLdq6D+iAs0Y4Q+o+oSKisrdd9ijpDLrWuQgUcPaCIKGgDdawKeId0YHEcxSB0Pys/M/n/AEpbHspbRDZZn9ButbXAC4CADZKplLi1apPt2kXE9HjHeaAWRSBf148EQLq1AAQh5+otoKRABQrGZmfsdn0zssacVLUBeT6XDbR0uaGmO04AtMrS+Jfqq1gJBAIDcgGKiRxGrDpHwdVLoudTs2J7e6wh7dSKXv5UQQQ0tgDdUHpUDASgDIIyioKEOoBBAWnvKdVYhqO1jQ6aJVe3QecBFA3IP9yVlQ6FIwEfJ1NsgDOpPoeBJ/SB453SMhhFihEmDkJwFlVQeo2fD1gJHCRU+xeIiF1Hset+hERuuKrXIj6IvuOuc0FShUs+AUE1RKCOXre0GEkACDdQlDxfit/aBtDjng22CMkkW7xlSp1A8qEA5xTcHL6WieOvZAgx0NgeyipG+iS3+ju/jUMFxUUHH0NrmSICFPMm4ATOPZKhlDDHTCVTolSJTOrS667H65rCE+kXiexo5CBF4tpwAkkHlwqfi8vkMsoBNUQeQJejjQMi+/E4+wDh0XpU8jAc4n/fPFrCBEC5TAHYhzJqJnDEo5pmn8U9h8m/FwyDX4PHD7N+LlkmnDSEAKKBJ5L3Jl0TjpJWAQU8FzCiwWPhs95M3wdvPQ/jkK+9Hd0g/8AAAAASUVORK5CYII=" InformativeScreenshot="71476e6404080557f41ed47f8320d207.jpg" Selector="&lt;html app='chrome.exe' title='New chat' /&gt;" Url="https://chat.openai.com/chat" />
               </uix:NApplicationCard.TargetApp>
             </uix:NApplicationCard>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
