@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,1934" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="662,1976" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
       <x:String>System.Activities</x:String>
@@ -88,19 +88,19 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,1869" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,1911" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,1758" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MySQL 8.0 Command Line Client" sap:VirtualizedContainerService.HintSize="530,1800" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1467" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1509" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DatabaseSchema" />
             </Sequence.Variables>
@@ -137,7 +137,7 @@
                 <OutArgument x:TypeArguments="x:String">[DatabaseSchema]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,280" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New chat" sap:VirtualizedContainerService.HintSize="434,322" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e87f6317-99bc-4aa9-a60b-e54bf98391c8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -153,7 +153,7 @@
                 </ActivityAction>
               </uix:NApplicationCard.Body>
               <uix:NApplicationCard.TargetApp>
-                <uix:TargetApp Area="0, 0, 0, 0" />
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAAdQAAAHUB48IHZQAABK5JREFUWEe9V1lTU0kU5s0/4/hL5o/4MA9ThTDO4lJqzdSU5UKNjpoAggOSsMuiiJqwyi7IEoEAYRFkRxK2bGfOd6Avfe9tUEvxVH2V9Hq+22frzvjx7M82ZBZ7zmT5cm+f83mHGTEGfSVi50q8Q4xb2f78H5z6rD8/1eec4sn3GClt8bdGionchS4bgX3lnqBhwcnA7w0oEkKAO/Hl5sknhEyf944QgM2547OO/VpNCbWND9P6Vowg8WSCwovzVPQ6QFmG+Z9AMrPEe5q/3pNjGHQhr7mBdhNxSqXTNLX8gTomQtQ3HabNnW0hM/x+mi5XF9GftT66UFFo3MOJLJ/nJo4f3m6coHDreSUlkklaiX6k241VtrHzZfk0sbQgJHSZW1uhh62NtrkucHRksC2ixkENOGZ8/V91fls/iE0eKI/yScA8tf2d1DI2RBvbW9LfMzVG2f482zoNmzgB04Agr+U5Dc1FKM0bYVPVf7mqiDon3lGazbHHxOrfdstJ6GvRfh0OCYlXoX7bmA4jgfOl+fRmekIWw+aQwrYXMobfnfiekOqZGqcrT4qtdTcaKmStagOjC7OUSCXpSvXhPB1GAt2To6K0PTxC/q5m+X8vUCdjg3wisG9OY7U1//rTMlY0J/NWY5tUcEAWuPuqVvoretusPh0uArArpDcyLm1sBtEJqM0uVD4S0yAcg+/e0uOOIIdoVOaPL76XE/mlNE/a8A+lQ4eLACbiyC5V/SdtE4GqvnYhsbW3K2OtY8OiCOO/su0bBnuFFMzXwb4CaR499CEdLgKza8s0u7pstU0EsPnix3XyND2j+4F6WthYs9pq3bWax+xHYfEVSFl3izWmw0Vgfn2VIiuLVttEAN6tvhjI9ueKKSAjnJD+ri+1rY9zDoHfmMLRRaB/ZlJiHkeJNjIgpJjTLdq6D+iAs0Y4Q+o+oSKisrdd9ijpDLrWuQgUcPaCIKGgDdawKeId0YHEcxSB0Pys/M/n/AEpbHspbRDZZn9ButbXAC4CADZKplLi1apPt2kXE9HjHeaAWRSBf148EQLq1AAQh5+otoKRABQrGZmfsdn0zssacVLUBeT6XDbR0uaGmO04AtMrS+Jfqq1gJBAIDcgGKiRxGrDpHwdVLoudTs2J7e6wh7dSKXv5UQQQ0tgDdUHpUDASgDIIyioKEOoBBAWnvKdVYhqO1jQ6aJVe3QecBFA3IP9yVlQ6FIwEfJ1NsgDOpPoeBJ/SB453SMhhFihEmDkJwFlVQeo2fD1gJHCRU+xeIiF1Hset+hERuuKrXIj6IvuOuc0FShUs+AUE1RKCOXre0GEkACDdQlDxfit/aBtDjng22CMkkW7xlSp1A8qEA5xTcHL6WieOvZAgx0NgeyipG+iS3+ju/jUMFxUUHH0NrmSICFPMm4ATOPZKhlDDHTCVTolSJTOrS667H65rCE+kXiexo5CBF4tpwAkkHlwqfi8vkMsoBNUQeQJejjQMi+/E4+wDh0XpU8jAc4n/fPFrCBEC5TAHYhzJqJnDEo5pmn8U9h8m/FwyDX4PHD7N+LlkmnDSEAKKBJ5L3Jl0TjpJWAQU8FzCiwWPhs95M3wdvPQ/jkK+9Hd0g/8AAAAASUVORK5CYII=" InformativeScreenshot="71476e6404080557f41ed47f8320d207.jpg" Selector="&lt;html app='chrome.exe' title='New chat' /&gt;" Url="https://chat.openai.com/chat" />
               </uix:NApplicationCard.TargetApp>
             </uix:NApplicationCard>
           </Sequence>
