@@ -112,7 +112,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'windowsterminal.exe MyS…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c78506ea-f35b-4818-963d-6c19bdb49a35" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'windowsterminal.exe MyS…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c78506ea-f35b-4818-963d-6c19bdb49a35" Text="Akhil@123" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="157, 44, 534, 28" DesignTimeScaleFactor="1" FriendlyName="'windowsterminal.exe MyS…'" Guid="ff32a7dd-1f84-4a2f-9da1-b6c1f35defff" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhYAAAAcCAYAAAA9Q/acAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACeSURBVHhe7daxDcAwEAOxDPD7r2vDXVwGuZICWGiDe2ZmAQAUhAUAkBEWAEBGWAAAmSsszt4fAOALYQEAZIQFAJARFgBARlgAABlhAQBkhAUAkBEWAEBGWAAAGWEBAGSEBQCQERYAQEZYAAAZYQEAZIQFAJARFgBARlgAABlhAQBkhAUAkLnCAgDgD2EBAGSEBQCQERYAQEZYAACRWRsmBZ4yQH05ywAAAABJRU5ErkJggg==" InformativeScreenshot="202d0c0a70c06548b005a1a0a67f579b.png" ScopeSelectorArgument="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='MySQL 8.0 Command Line Client' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
